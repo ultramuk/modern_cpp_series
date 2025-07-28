@@ -7,7 +7,7 @@ int main() {
         | std::views::filter([](int x) { return x % 2 == 0; }) // 짝수만
         | std::views::take(5);      // 앞에서 5개만
 
-    for (int n : evens) std::cout << n << " ";
+    for (int n : even) std::cout << n << " ";
     std::cout << "\n";
 
     return 0;
