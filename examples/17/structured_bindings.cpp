@@ -22,7 +22,7 @@ int main() {
 
     std::cout << "[3] map 반복 시 구조 문해\n";
     std::map<std::string, int> m = {{"kim", 30}, {"lee", 20}};
-    for(const auto [key, value] : m) {
+    for(const auto& [key, value] : m) {
         std::cout << key << " => " << value << "\n";
     }
     std::cout << "\n";
@@ -30,7 +30,7 @@ int main() {
     std::cout << "[4] 사용자 정의 구조체 분해\n";
     Person p1 = {"Choi",25};
     auto [person_name, person_age] = p1;
-    std::cout << person_name << "is " << person_age << " yelos old.\n";
+    std::cout << person_name << "is " << person_age << " years old.\n";
 
     return 0;
 }

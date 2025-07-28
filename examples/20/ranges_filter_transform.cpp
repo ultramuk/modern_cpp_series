@@ -11,7 +11,7 @@ int main() {
         | std::views::transform([](int n) { return n * n; });
 
     std::cout << "짝수의 제곱: ";
-    for (int val : even_squred) {
+    for (int val : even_squared) {
         std::cout << val << " ";
     }
     std::cout << "\n";
